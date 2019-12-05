@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower|Sunflower:300&display=swap');
+
+body {
+	background: #242629;
+	font-family: 'Sunflower', sans-serif;
+}
+
+.main-container {
+	text-align: center;
+}
+
+.main-container h1 {
+	margin-top: 50px;
+	color: #fffffe;
+	font-size: 40px;
+}
+
+.main-container h1 span {
+	color: #e53170;
+}
+
+/* .card-list {
+	width: 85vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+} */
+
+.card-list {
+	width: 95vw;
+	margin: 0 auto;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card-container {
+	display: flex;
+	width: 250px;
+	margin: 10px;
+	flex-direction: column;
+	background: #16161a;
+	color: #fffffe;
+	border-radius: 5px;
+	padding: 25px;
+	cursor: pointer;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: transform 0.25s ease-in-out;
+}
+
+.card-container h2 {
+	color: #e53170;
+	font-family: 'Gamja Flower', cursive;
+}
+
+.card-container p {
+	color: #94a1b2;
+}
+
+.card-container img {
+	width: 100%;
+	height: 200px;
+}
+
+.card-container:hover {
+	transform: scale(1.05);
+}
